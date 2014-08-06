@@ -1,0 +1,17 @@
+{
+    "contents" : "css <- function(supress=c())\n{\n  create.dir('rscript',supress)\n  create.dir('input',supress)\n  create.dir('output',supress)\n  create.dir('sql',supress)\n  create.dir('cache',supress)\n}\n\ncreate.dir <- function(name,supress)\n{\n  if(!any(supress==name))\n  {\n    dir.create(name,showWarnings=FALSE)\n  }\n}\n\ncreate.standard.structure <- function(supress=c())\n{\n  return(css(supress))\n}",
+    "created" : 1406369368857.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "851018024",
+    "id" : "A27A5A94",
+    "lastKnownWriteTime" : 1406370022,
+    "path" : "E:/Files/Jayden/RProjects/tdycd/R/css.R",
+    "project_path" : "R/css.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

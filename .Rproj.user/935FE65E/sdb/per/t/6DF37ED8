@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: tdycd\nType: Package\nTitle: Provides simple dependcy chaining between R script files\nVersion: 0.94\nDate: 2014-07-26\nAuthor: Jayden MacRae\nMaintainer: Jayden MacRae <dependr@macrae.net.nz>\nDescription: Tools for keeping R code tidy, including dependency chaining\nLicense: GPL\n",
+    "created" : 1406336713252.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4247121609",
+    "id" : "6DF37ED8",
+    "lastKnownWriteTime" : 1406336052,
+    "path" : "E:/Files/Jayden/RProjects/tdycd/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

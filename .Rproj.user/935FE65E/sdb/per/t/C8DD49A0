@@ -1,0 +1,16 @@
+{
+    "contents" : "\n \ndependrenv <- new.env()          # create a new environment to store helper functions\ndependrenv$dependr.vector <- c()\ndependr.path <- 'rscript/'  # default path to look for scripts on\n\ndependr <- function(targets)\n{\n  v <- get('dependr.vector',envir=dependrenv)\n  \n  if( !is.vector(targets)) stop('targets must be a vector')\n  for(target in targets)\n  {\n    dependr.character(target)\n  }\n}\n\ndependr.character <- function(target)\n{\n  v <- get('dependr.vector',envir=dependrenv) \n  \n  if (! is.character(target)) stop('target must be a character')\n \n  if (!any(v==target))\n    {\n      message(paste('Detected required dependency', target))  \n      \n      path <- paste(dependr.path,target,'.R',sep='')\n      if (file.exists(path))\n      {\n        dependr.executed(target)\n        source(path)\n      }\n      else\n      {\n        message(paste('Cannot locate file :',path))\n      }\n    }\n}\n \ndependr.executed <- function(target)\n{\n  v <- dependrenv$dependr.vector\n  if ( !any(v==target))\n  {\n    assign('dependr.vector',c(v,target),envir=dependrenv)\n  }\n}\n \ndependr.clear <- function()\n{\n  assign('dependr.vector',c(),envir=dependrenv)\n}\n \n ",
+    "created" : 1406701798659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3503847171",
+    "id" : "C8DD49A0",
+    "lastKnownWriteTime" : 1406792568,
+    "path" : "E:/Files/Jayden/RProjects/tdycd/R/dependr.R",
+    "project_path" : "R/dependr.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

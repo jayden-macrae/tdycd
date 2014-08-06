@@ -1,0 +1,17 @@
+{
+    "contents" : "\n\nread.from.file <- function (path) {\n    if( ! is.character(path))\n                {\n                                message('read.from.file requires a path to the file')\n                                return('')\n                }\n                if (! file.exists(path))\n                {\n                                message('File not found.')\n                                return ('')\n                }\n               \n                return (readChar(path,file.info(path)$size))\n}\n\nrff <- function(path)\n{\n  return (read.from.file(path))\n}",
+    "created" : 1406701792560.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "812535461",
+    "id" : "683418BA",
+    "lastKnownWriteTime" : 1406336666,
+    "path" : "E:/Files/Jayden/RProjects/tdycd/R/rff.R",
+    "project_path" : "R/rff.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

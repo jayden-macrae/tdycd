@@ -1,0 +1,16 @@
+{
+    "contents" : "\\name{tdycd-package}\n\\alias{tdycd-package}\n\\alias{tdycd}\n\\docType{package}\n\\title{\nTools for keeping R code tidy\n}\n\\description{\nProvides tools for keeping R code tidy.\n}\n\\details{\n\\tabular{ll}{\nPackage: \\tab tdycd\\cr\nType: \\tab Package\\cr\nVersion: \\tab 0.94\\cr\nDate: \\tab 2014-07-26\\cr\nLicense: \\tab GPL\\cr\n}\n\nDependency chaining can be used by calling the functions dependr, dependr.executed, and dependr.clear.\n\nInput helper function read.from.file provides easy access to file information.\n\n}\n\\author{\nJayden MacRae\n\nMaintainer: Jayden MacRae <dependr@macrae.net.nz>\n}\n\\references{\n\n}\n\n\\keyword{ package }\n\\seealso{\n~~ Optional links to other man pages, e.g. ~~\n~~ \\code{\\link[<pkg>:<pkg>-package]{<pkg>}} ~~\n}\n\\examples{\ndependr('file-name')\ndependr.executed('file-name')\ndependr.clear()\nread.from.file('path/to/file')\nrff('path/to/file')\ncss(supress=c('input'))\ncreate.standard.structure(supress=c('input'))\n}\n",
+    "created" : 1406336720281.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1321272753",
+    "id" : "20E59318",
+    "lastKnownWriteTime" : 1406370096,
+    "path" : "E:/Files/Jayden/RProjects/tdycd/man/tdycd-package.Rd",
+    "project_path" : "man/tdycd-package.Rd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_doc"
+}
